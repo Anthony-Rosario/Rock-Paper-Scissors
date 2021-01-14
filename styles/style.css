@@ -68,6 +68,7 @@ section {
 
 header {
     justify-content: center;
+    border: 1px solid black;
     background-color: var(--color3);
     height: auto;
     box-shadow: var(--shadow);
