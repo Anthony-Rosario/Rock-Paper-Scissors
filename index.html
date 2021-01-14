@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <title>Rock, Paper, Scissors</title>
+</head>
+
+<body>
+    <header>
+      <h1>Roshambo</h1>  
+    </header>
+    <main>
+        <section>
+            <ul>
+                <li>Press Start to play</li>
+                <li>Choose between rock, paper or scissors</li>
+                <li>Press the Reset button if you want to reset the count</li>
+                <li>Have fun!</li>
+            </ul>
+        </section>
+        <section >
+            <h2 class="choose">Choose wisely!</h2>
+            <label class="flex-row">
+                <input type="radio" name="user-pick" value="rock" />
+                <img src="./assets/hqdefault.jpg" class="rock-img">
+            </label>
+            <label class="flex-row">
+                <input type="radio" name="user-pick" value="paper" />
+                <img src="./assets/Bobob.png" class="paper-img">
+            </label>
+            <label class="flex-row">
+                <input type="radio" name="user-pick" value="scissors" />
+                <img src="./assets/hZGUIuq.png" class="scissors-img">
+            </label>
+        </section>
+        <section>
+            <button id="start-game" class="startbtn">Throw down!</button>
+            <button id="reset-game" class="resetbtn">Reset</button> 
+                <span id="computer-throw"></span><br>
+                <span id="round-results"></span><br>
+                <span>Wins:</span>
+                <span id="win">0</span><br>
+                <span>Draws:</span>
+                <span id="tie">0</span><br>
+                <span>Losses:</span>
+                <span id="loss">0</span><br>
+                <span>Total Attempts:</span>
+                <span id="total">0</span><br>
+                <span>Number of Game Resets:</span>
+                <span id="reset-times">0</span><br>
+            </section>
+    </main>
+    
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
