@@ -1,8 +1,8 @@
 export function getRandomThrow() {
     const throwSymbol = Math.ceil(Math.random() * 3);
-    if (throwSymbol === 3) return 'rock';
+    if (throwSymbol === 1) return 'rock';
     if (throwSymbol === 2) return 'paper';
-    if (throwSymbol === 1) return 'scissors';
+    if (throwSymbol === 3) return 'scissors';
 }
 
 
@@ -10,16 +10,16 @@ export function getRandomThrow() {
 const roundResults = document.getElementById('round-results');
 const computerT = document.getElementById('computer-throw');
 
-export function userWin(player, machine) {
-    if (player === 'rock' && machine === 'scissors') {
+export function userWin(userThrow, computerThrow) {
+    if (userThrow === 'rock' && computerThrow === 'scissors') {
         roundResults.textContent = 'rock wins against scissors';
         computerT.textContent = 'Larry tosses scissors';
         return true;
-    } else if (player === 'paper' && machine === 'rock') {
+    } else if (userThrow === 'paper' && computerThrow === 'rock') {
         roundResults.textContent = 'paper wins against rock';
         computerT.textContent = 'Larry shoots rock';
         return true;
-    } else if (player === 'scissors' && machine === 'paper') {
+    } else if (userThrow === 'scissors' && computerThrow === 'paper') {
         roundResults.textContent = 'scissors wins against paper';
         computerT.textContent = 'Larry crumples paper';
         return true;
